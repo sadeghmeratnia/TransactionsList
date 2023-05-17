@@ -8,15 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		72CF3A3E2A14B35E00C92346 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72CF3A3D2A14B35E00C92346 /* AppDelegate.swift */; };
-		72CF3A402A14B35E00C92346 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72CF3A3F2A14B35E00C92346 /* SceneDelegate.swift */; };
-		72CF3A422A14B35E00C92346 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72CF3A412A14B35E00C92346 /* ViewController.swift */; };
-		72CF3A452A14B35E00C92346 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72CF3A432A14B35E00C92346 /* Main.storyboard */; };
 		72CF3A482A14B35E00C92346 /* TransactionsList.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 72CF3A462A14B35E00C92346 /* TransactionsList.xcdatamodeld */; };
 		72CF3A4A2A14B36000C92346 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72CF3A492A14B36000C92346 /* Assets.xcassets */; };
 		72CF3A4D2A14B36000C92346 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72CF3A4B2A14B36000C92346 /* LaunchScreen.storyboard */; };
 		72CF3A582A14B36100C92346 /* TransactionsListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72CF3A572A14B36100C92346 /* TransactionsListTests.swift */; };
 		72CF3A622A14B36100C92346 /* TransactionsListUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72CF3A612A14B36100C92346 /* TransactionsListUITests.swift */; };
 		72CF3A642A14B36100C92346 /* TransactionsListUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72CF3A632A14B36100C92346 /* TransactionsListUITestsLaunchTests.swift */; };
+		72CF3A732A14B53F00C92346 /* Coordinatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72CF3A722A14B53F00C92346 /* Coordinatable.swift */; };
+		72CF3A752A14B56700C92346 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72CF3A742A14B56700C92346 /* Coordinator.swift */; };
+		72CF3A772A14B5E700C92346 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72CF3A762A14B5E700C92346 /* MainCoordinator.swift */; };
+		72CF3A7A2A14E55C00C92346 /* MainNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72CF3A792A14E55C00C92346 /* MainNavigationController.swift */; };
+		72CF3A7E2A14E9C200C92346 /* TransactionsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72CF3A7D2A14E9C100C92346 /* TransactionsListViewController.swift */; };
+		72CF3A812A14EA2700C92346 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72CF3A802A14EA2700C92346 /* BaseViewController.swift */; };
+		72CF3A842A14EB8C00C92346 /* ViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72CF3A832A14EB8C00C92346 /* ViewControllerExtension.swift */; };
+		72CF3A862A1517E200C92346 /* TransactionsListViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72CF3A852A1517E200C92346 /* TransactionsListViewController.storyboard */; };
+		72CF3A882A15183000C92346 /* TransactionsListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72CF3A872A15183000C92346 /* TransactionsListCoordinator.swift */; };
+		72CF3A8B2A151CE200C92346 /* ColorRefrences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72CF3A8A2A151CE200C92346 /* ColorRefrences.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,9 +46,6 @@
 /* Begin PBXFileReference section */
 		72CF3A3A2A14B35E00C92346 /* TransactionsList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TransactionsList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		72CF3A3D2A14B35E00C92346 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		72CF3A3F2A14B35E00C92346 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		72CF3A412A14B35E00C92346 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		72CF3A442A14B35E00C92346 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		72CF3A472A14B35E00C92346 /* TransactionsList.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TransactionsList.xcdatamodel; sourceTree = "<group>"; };
 		72CF3A492A14B36000C92346 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		72CF3A4C2A14B36000C92346 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +55,16 @@
 		72CF3A5D2A14B36100C92346 /* TransactionsListUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TransactionsListUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		72CF3A612A14B36100C92346 /* TransactionsListUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsListUITests.swift; sourceTree = "<group>"; };
 		72CF3A632A14B36100C92346 /* TransactionsListUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsListUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		72CF3A722A14B53F00C92346 /* Coordinatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinatable.swift; sourceTree = "<group>"; };
+		72CF3A742A14B56700C92346 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		72CF3A762A14B5E700C92346 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		72CF3A792A14E55C00C92346 /* MainNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavigationController.swift; sourceTree = "<group>"; };
+		72CF3A7D2A14E9C100C92346 /* TransactionsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsListViewController.swift; sourceTree = "<group>"; };
+		72CF3A802A14EA2700C92346 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		72CF3A832A14EB8C00C92346 /* ViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerExtension.swift; sourceTree = "<group>"; };
+		72CF3A852A1517E200C92346 /* TransactionsListViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TransactionsListViewController.storyboard; sourceTree = "<group>"; };
+		72CF3A872A15183000C92346 /* TransactionsListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsListCoordinator.swift; sourceTree = "<group>"; };
+		72CF3A8A2A151CE200C92346 /* ColorRefrences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorRefrences.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,13 +115,9 @@
 		72CF3A3C2A14B35E00C92346 /* TransactionsList */ = {
 			isa = PBXGroup;
 			children = (
-				72CF3A3D2A14B35E00C92346 /* AppDelegate.swift */,
-				72CF3A3F2A14B35E00C92346 /* SceneDelegate.swift */,
-				72CF3A412A14B35E00C92346 /* ViewController.swift */,
-				72CF3A432A14B35E00C92346 /* Main.storyboard */,
-				72CF3A492A14B36000C92346 /* Assets.xcassets */,
-				72CF3A4B2A14B36000C92346 /* LaunchScreen.storyboard */,
-				72CF3A4E2A14B36000C92346 /* Info.plist */,
+				72CF3A7B2A14E97400C92346 /* Modules */,
+				72CF3A702A14B51C00C92346 /* Core */,
+				72CF3A892A151C4100C92346 /* Resources */,
 				72CF3A462A14B35E00C92346 /* TransactionsList.xcdatamodeld */,
 			);
 			path = TransactionsList;
@@ -128,6 +138,81 @@
 				72CF3A632A14B36100C92346 /* TransactionsListUITestsLaunchTests.swift */,
 			);
 			path = TransactionsListUITests;
+			sourceTree = "<group>";
+		};
+		72CF3A702A14B51C00C92346 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				72CF3A7F2A14E9EC00C92346 /* Base View Controller */,
+				72CF3A782A14E53500C92346 /* Base Navigation Controller */,
+				72CF3A712A14B52400C92346 /* Base Coordinator */,
+				72CF3A822A14EABC00C92346 /* Extensions */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		72CF3A712A14B52400C92346 /* Base Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				72CF3A722A14B53F00C92346 /* Coordinatable.swift */,
+				72CF3A742A14B56700C92346 /* Coordinator.swift */,
+				72CF3A762A14B5E700C92346 /* MainCoordinator.swift */,
+			);
+			path = "Base Coordinator";
+			sourceTree = "<group>";
+		};
+		72CF3A782A14E53500C92346 /* Base Navigation Controller */ = {
+			isa = PBXGroup;
+			children = (
+				72CF3A792A14E55C00C92346 /* MainNavigationController.swift */,
+			);
+			path = "Base Navigation Controller";
+			sourceTree = "<group>";
+		};
+		72CF3A7B2A14E97400C92346 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				72CF3A7C2A14E98900C92346 /* TransactionsList */,
+				72CF3A3D2A14B35E00C92346 /* AppDelegate.swift */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		72CF3A7C2A14E98900C92346 /* TransactionsList */ = {
+			isa = PBXGroup;
+			children = (
+				72CF3A852A1517E200C92346 /* TransactionsListViewController.storyboard */,
+				72CF3A7D2A14E9C100C92346 /* TransactionsListViewController.swift */,
+				72CF3A872A15183000C92346 /* TransactionsListCoordinator.swift */,
+			);
+			path = TransactionsList;
+			sourceTree = "<group>";
+		};
+		72CF3A7F2A14E9EC00C92346 /* Base View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				72CF3A802A14EA2700C92346 /* BaseViewController.swift */,
+			);
+			path = "Base View Controller";
+			sourceTree = "<group>";
+		};
+		72CF3A822A14EABC00C92346 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				72CF3A832A14EB8C00C92346 /* ViewControllerExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		72CF3A892A151C4100C92346 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				72CF3A492A14B36000C92346 /* Assets.xcassets */,
+				72CF3A4E2A14B36000C92346 /* Info.plist */,
+				72CF3A4B2A14B36000C92346 /* LaunchScreen.storyboard */,
+				72CF3A8A2A151CE200C92346 /* ColorRefrences.swift */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,9 +319,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72CF3A862A1517E200C92346 /* TransactionsListViewController.storyboard in Resources */,
 				72CF3A4D2A14B36000C92346 /* LaunchScreen.storyboard in Resources */,
 				72CF3A4A2A14B36000C92346 /* Assets.xcassets in Resources */,
-				72CF3A452A14B35E00C92346 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,10 +346,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				72CF3A422A14B35E00C92346 /* ViewController.swift in Sources */,
+				72CF3A7E2A14E9C200C92346 /* TransactionsListViewController.swift in Sources */,
 				72CF3A3E2A14B35E00C92346 /* AppDelegate.swift in Sources */,
+				72CF3A7A2A14E55C00C92346 /* MainNavigationController.swift in Sources */,
+				72CF3A752A14B56700C92346 /* Coordinator.swift in Sources */,
+				72CF3A812A14EA2700C92346 /* BaseViewController.swift in Sources */,
+				72CF3A732A14B53F00C92346 /* Coordinatable.swift in Sources */,
+				72CF3A842A14EB8C00C92346 /* ViewControllerExtension.swift in Sources */,
+				72CF3A772A14B5E700C92346 /* MainCoordinator.swift in Sources */,
 				72CF3A482A14B35E00C92346 /* TransactionsList.xcdatamodeld in Sources */,
-				72CF3A402A14B35E00C92346 /* SceneDelegate.swift in Sources */,
+				72CF3A882A15183000C92346 /* TransactionsListCoordinator.swift in Sources */,
+				72CF3A8B2A151CE200C92346 /* ColorRefrences.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,14 +393,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		72CF3A432A14B35E00C92346 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				72CF3A442A14B35E00C92346 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		72CF3A4B2A14B36000C92346 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -370,7 +454,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -424,7 +508,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -441,11 +525,11 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9N424R5SGN;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = TransactionsList/Info.plist;
+				INFOPLIST_FILE = TransactionsList/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -468,11 +552,11 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9N424R5SGN;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = TransactionsList/Info.plist;
+				INFOPLIST_FILE = TransactionsList/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
