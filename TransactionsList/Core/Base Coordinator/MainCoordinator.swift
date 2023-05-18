@@ -21,12 +21,12 @@ class MainCoordinator: NSObject {
 extension MainCoordinator: Coordinator {
     func start() {
         self.window = UIWindow(frame: UIScreen.main.bounds)
-        self.window?.rootViewController = navigationController
+        self.window?.rootViewController = self.navigationController
         self.window?.makeKeyAndVisible()
     }
 
     func coordinateToFirstPage() {
-        let coordinator = TransactionsListCoordinator(navigationController: self.navigationController)
+        let coordinator = TransactionsListCoordinator(navigationController: navigationController)
         coordinator.start()
     }
 }

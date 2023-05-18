@@ -13,6 +13,6 @@ enum ColorRefrences: String {
 
 extension ColorRefrences {
     var color: UIColor {
-        UIColor(named: self.rawValue) ?? UIColor()
+        UIColor(named: rawValue) ?? UIColor()
     }
 }

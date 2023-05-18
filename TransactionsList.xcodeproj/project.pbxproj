@@ -24,6 +24,13 @@
 		72CF3A862A1517E200C92346 /* TransactionsListViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72CF3A852A1517E200C92346 /* TransactionsListViewController.storyboard */; };
 		72CF3A882A15183000C92346 /* TransactionsListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72CF3A872A15183000C92346 /* TransactionsListCoordinator.swift */; };
 		72CF3A8B2A151CE200C92346 /* ColorRefrences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72CF3A8A2A151CE200C92346 /* ColorRefrences.swift */; };
+		72EA865C2A1578A000DCF9C8 /* APIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72EA865B2A1578A000DCF9C8 /* APIRouter.swift */; };
+		72EA865E2A1668FF00DCF9C8 /* EncodableExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72EA865D2A1668FF00DCF9C8 /* EncodableExtension.swift */; };
+		72EA86602A166A9C00DCF9C8 /* NetworkAgent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72EA865F2A166A9C00DCF9C8 /* NetworkAgent.swift */; };
+		72EA86632A166B4D00DCF9C8 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 72EA86622A166B4D00DCF9C8 /* RxCocoa */; };
+		72EA86652A166B4D00DCF9C8 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 72EA86642A166B4D00DCF9C8 /* RxSwift */; };
+		72EA86672A166DF700DCF9C8 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72EA86662A166DF700DCF9C8 /* NetworkError.swift */; };
+		72EA866A2A16711500DCF9C8 /* Resolver in Frameworks */ = {isa = PBXBuildFile; productRef = 72EA86692A16711500DCF9C8 /* Resolver */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +72,10 @@
 		72CF3A852A1517E200C92346 /* TransactionsListViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TransactionsListViewController.storyboard; sourceTree = "<group>"; };
 		72CF3A872A15183000C92346 /* TransactionsListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsListCoordinator.swift; sourceTree = "<group>"; };
 		72CF3A8A2A151CE200C92346 /* ColorRefrences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorRefrences.swift; sourceTree = "<group>"; };
+		72EA865B2A1578A000DCF9C8 /* APIRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRouter.swift; sourceTree = "<group>"; };
+		72EA865D2A1668FF00DCF9C8 /* EncodableExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncodableExtension.swift; sourceTree = "<group>"; };
+		72EA865F2A166A9C00DCF9C8 /* NetworkAgent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkAgent.swift; sourceTree = "<group>"; };
+		72EA86662A166DF700DCF9C8 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +83,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72EA866A2A16711500DCF9C8 /* Resolver in Frameworks */,
+				72EA86652A166B4D00DCF9C8 /* RxSwift in Frameworks */,
+				72EA86632A166B4D00DCF9C8 /* RxCocoa in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,6 +161,7 @@
 				72CF3A782A14E53500C92346 /* Base Navigation Controller */,
 				72CF3A712A14B52400C92346 /* Base Coordinator */,
 				72CF3A822A14EABC00C92346 /* Extensions */,
+				72EA865A2A15788800DCF9C8 /* Network */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -200,6 +215,7 @@
 			isa = PBXGroup;
 			children = (
 				72CF3A832A14EB8C00C92346 /* ViewControllerExtension.swift */,
+				72EA865D2A1668FF00DCF9C8 /* EncodableExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -215,6 +231,16 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		72EA865A2A15788800DCF9C8 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				72EA865B2A1578A000DCF9C8 /* APIRouter.swift */,
+				72EA865F2A166A9C00DCF9C8 /* NetworkAgent.swift */,
+				72EA86662A166DF700DCF9C8 /* NetworkError.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -225,12 +251,19 @@
 				72CF3A362A14B35E00C92346 /* Sources */,
 				72CF3A372A14B35E00C92346 /* Frameworks */,
 				72CF3A382A14B35E00C92346 /* Resources */,
+				72EA866B2A16730100DCF9C8 /* SwiftLint */,
+				72EA866C2A16731500DCF9C8 /* SwiftFormat */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = TransactionsList;
+			packageProductDependencies = (
+				72EA86622A166B4D00DCF9C8 /* RxCocoa */,
+				72EA86642A166B4D00DCF9C8 /* RxSwift */,
+				72EA86692A16711500DCF9C8 /* Resolver */,
+			);
 			productName = TransactionsList;
 			productReference = 72CF3A3A2A14B35E00C92346 /* TransactionsList.app */;
 			productType = "com.apple.product-type.application";
@@ -303,6 +336,10 @@
 				Base,
 			);
 			mainGroup = 72CF3A312A14B35E00C92346;
+			packageReferences = (
+				72EA86612A166B4D00DCF9C8 /* XCRemoteSwiftPackageReference "RxSwift" */,
+				72EA86682A16711500DCF9C8 /* XCRemoteSwiftPackageReference "Resolver" */,
+			);
 			productRefGroup = 72CF3A3B2A14B35E00C92346 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -341,21 +378,64 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		72EA866B2A16730100DCF9C8 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export PATH=\"$PATH:/opt/homebrew/bin\"\nif which swiftlint > /dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+		72EA866C2A16731500DCF9C8 /* SwiftFormat */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftFormat;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftformat >/dev/null; then\n  swiftformat .\nelse\n  echo \"warning: SwiftFormat not installed, download from https://github.com/nicklockwood/SwiftFormat\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		72CF3A362A14B35E00C92346 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				72CF3A7E2A14E9C200C92346 /* TransactionsListViewController.swift in Sources */,
+				72EA865C2A1578A000DCF9C8 /* APIRouter.swift in Sources */,
 				72CF3A3E2A14B35E00C92346 /* AppDelegate.swift in Sources */,
 				72CF3A7A2A14E55C00C92346 /* MainNavigationController.swift in Sources */,
 				72CF3A752A14B56700C92346 /* Coordinator.swift in Sources */,
+				72EA865E2A1668FF00DCF9C8 /* EncodableExtension.swift in Sources */,
 				72CF3A812A14EA2700C92346 /* BaseViewController.swift in Sources */,
 				72CF3A732A14B53F00C92346 /* Coordinatable.swift in Sources */,
 				72CF3A842A14EB8C00C92346 /* ViewControllerExtension.swift in Sources */,
+				72EA86672A166DF700DCF9C8 /* NetworkError.swift in Sources */,
 				72CF3A772A14B5E700C92346 /* MainCoordinator.swift in Sources */,
 				72CF3A482A14B35E00C92346 /* TransactionsList.xcdatamodeld in Sources */,
 				72CF3A882A15183000C92346 /* TransactionsListCoordinator.swift in Sources */,
+				72EA86602A166A9C00DCF9C8 /* NetworkAgent.swift in Sources */,
 				72CF3A8B2A151CE200C92346 /* ColorRefrences.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -684,6 +764,43 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		72EA86612A166B4D00DCF9C8 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		72EA86682A16711500DCF9C8 /* XCRemoteSwiftPackageReference "Resolver" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hmlongco/Resolver.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		72EA86622A166B4D00DCF9C8 /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 72EA86612A166B4D00DCF9C8 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		72EA86642A166B4D00DCF9C8 /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 72EA86612A166B4D00DCF9C8 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+		72EA86692A16711500DCF9C8 /* Resolver */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 72EA86682A16711500DCF9C8 /* XCRemoteSwiftPackageReference "Resolver" */;
+			productName = Resolver;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		72CF3A462A14B35E00C92346 /* TransactionsList.xcdatamodeld */ = {

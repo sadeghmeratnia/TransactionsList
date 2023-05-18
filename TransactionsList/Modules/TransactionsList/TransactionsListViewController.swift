@@ -8,10 +8,9 @@
 import UIKit
 
 class TransactionsListViewController: BaseViewController {
-
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.view.backgroundColor = ColorRefrences.mainBackground.color
+        view.backgroundColor = ColorRefrences.mainBackground.color
     }
 }
