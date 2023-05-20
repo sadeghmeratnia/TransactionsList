@@ -25,4 +25,17 @@ extension String {
             }
         }.joined()
     }
+
+    var toStandardDateFormat: String? {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
+
+        if let date = dateFormatter.date(from: self) {
+            dateFormatter.dateFormat = "MMM dd, yyyy, HH:mm"
+            dateFormatter.timeZone = TimeZone(secondsFromGMT: 0)
+            return dateFormatter.string(from: date)
+        }
+
+        return nil
+    }
 }

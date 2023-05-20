@@ -8,3 +8,13 @@
 
 // MARK: - Home
 "search.placeholder" = "Search transactions by name...";
+
+//MARK: - Detail
+"detail.email" = "email:";
+"detail.cardType" = "Card type:";
+"detail.transfer" = "Last transfer:";
+"detail.note" = "Note:";
+"detail.count" = "Transfers count:";
+"detail.total" = "Total transfers:";
+"detail.add.favorite" = "Add to Favorites";
+"detail.remove.favorite" = "Remove from Favorites";

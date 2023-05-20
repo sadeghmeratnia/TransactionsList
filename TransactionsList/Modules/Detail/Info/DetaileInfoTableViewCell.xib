@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="DetaileInfoTableViewCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="79" id="x1B-nG-X0M" customClass="DetaileInfoTableViewCell" customModule="TransactionsList" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="410" height="74"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="x1B-nG-X0M" id="65k-LL-D0n">
+                <rect key="frame" x="0.0" y="0.0" width="410" height="74"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m0d-gF-moa">
+                        <rect key="frame" x="12" y="12" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c2V-VL-AjU">
+                        <rect key="frame" x="12" y="41" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gme-df-T6i">
+                        <rect key="frame" x="16" y="73" width="378" height="1"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="KwO-lT-QOp"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="c2V-VL-AjU" secondAttribute="trailing" constant="16" id="Atb-d9-XOY"/>
+                    <constraint firstAttribute="bottom" secondItem="gme-df-T6i" secondAttribute="bottom" id="LAE-6u-Kkn"/>
+                    <constraint firstItem="m0d-gF-moa" firstAttribute="leading" secondItem="65k-LL-D0n" secondAttribute="leading" constant="12" id="NPy-8X-R2z"/>
+                    <constraint firstItem="m0d-gF-moa" firstAttribute="top" secondItem="65k-LL-D0n" secondAttribute="top" constant="12" id="OKQ-yH-O2J"/>
+                    <constraint firstItem="c2V-VL-AjU" firstAttribute="top" secondItem="m0d-gF-moa" secondAttribute="bottom" constant="8" id="XrF-8d-TNe"/>
+                    <constraint firstItem="c2V-VL-AjU" firstAttribute="leading" secondItem="m0d-gF-moa" secondAttribute="leading" id="Xyl-d1-Hur"/>
+                    <constraint firstItem="gme-df-T6i" firstAttribute="leading" secondItem="65k-LL-D0n" secondAttribute="leading" constant="16" id="k1n-Rc-EtO"/>
+                    <constraint firstAttribute="trailing" secondItem="gme-df-T6i" secondAttribute="trailing" constant="16" id="pia-Q8-qIB"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="m0d-gF-moa" secondAttribute="trailing" constant="16" id="st6-Sd-ajZ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="keyLabel" destination="m0d-gF-moa" id="aIS-Ra-4nO"/>
+                <outlet property="separatorView" destination="gme-df-T6i" id="R6G-kf-S7f"/>
+                <outlet property="valueLabel" destination="c2V-VL-AjU" id="GHh-B9-sw9"/>
+            </connections>
+            <point key="canvasLocation" x="151.14503816793894" y="30.985915492957748"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

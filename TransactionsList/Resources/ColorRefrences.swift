@@ -10,8 +10,10 @@ import UIKit
 enum ColorRefrences: String {
     case inputBackground
     case mainBackground
-    case titleTextColor
-    case descTextColor
+    case primaryButton
+    case buttonTitle
+    case title
+    case desc
 }
 
 extension ColorRefrences {

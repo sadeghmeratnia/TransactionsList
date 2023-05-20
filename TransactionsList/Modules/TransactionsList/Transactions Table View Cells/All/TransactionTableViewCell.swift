@@ -32,11 +32,11 @@ class TransactionTableViewCell: BaseTableViewCell {
         self.avatarImageView.cornerRadius = self.avatarImageView.frame.width / 2
 
         self.backgroundColor = .clear
-        self.nameLabel.textColor = ColorRefrences.titleTextColor.color
-        self.identifierLabel.textColor = ColorRefrences.descTextColor.color
+        self.nameLabel.textColor = ColorRefrences.title.color
+        self.identifierLabel.textColor = ColorRefrences.desc.color
 
         self.nameLabel.font = .boldSystemFont(ofSize: 14)
-        self.identifierLabel.font = UIFont.monospacedDigitSystemFont(ofSize: 14, weight: .medium)
+        self.identifierLabel.font = .monospacedDigitSystemFont(ofSize: 14, weight: .medium)
 
         self.arrowImageView.image = UIImage(systemName: "chevron.right")
         self.arrowImageView.changeImageColor(color: .systemGray2)

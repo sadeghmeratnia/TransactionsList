@@ -18,11 +18,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="1pX-Dq-GET">
-                                <rect key="frame" x="0.0" y="147" width="393" height="705"/>
+                                <rect key="frame" x="0.0" y="123" width="393" height="729"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="g0N-Ps-hO9">
-                                <rect key="frame" x="16" y="83" width="361" height="40"/>
+                                <rect key="frame" x="16" y="59" width="361" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="f8B-ih-bVG"/>
                                 </constraints>
@@ -37,7 +37,7 @@
                             <constraint firstItem="g0N-Ps-hO9" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="Gzs-ZL-q4b"/>
                             <constraint firstItem="1pX-Dq-GET" firstAttribute="top" secondItem="g0N-Ps-hO9" secondAttribute="bottom" constant="24" id="Kwb-G5-tzG"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="g0N-Ps-hO9" secondAttribute="trailing" constant="16" id="O5u-hi-Uk9"/>
-                            <constraint firstItem="g0N-Ps-hO9" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="24" id="TJ2-31-9HX"/>
+                            <constraint firstItem="g0N-Ps-hO9" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="TJ2-31-9HX"/>
                             <constraint firstAttribute="bottom" secondItem="1pX-Dq-GET" secondAttribute="bottom" id="dF7-YF-qhq"/>
                             <constraint firstItem="1pX-Dq-GET" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="uF2-cg-YQE"/>
                         </constraints>

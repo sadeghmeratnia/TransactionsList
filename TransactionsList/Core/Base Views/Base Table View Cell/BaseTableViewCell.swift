@@ -15,5 +15,8 @@ class BaseTableViewCell: UITableViewCell {
     }
 
     func setupModel(model: Codable) {}
-    func setupView() {}
+
+    func setupView() {
+        self.selectionStyle = .none
+    }
 }

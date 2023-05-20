@@ -19,4 +19,9 @@ class TransactionsListCoordinator: Coordinator {
         viewController.coordinator = self
         self.navigationController.setViewControllers([viewController], animated: true)
     }
+
+    func navigateToDetail(with transaction: TransactionModel) {
+        let coordinator = DetailCoordinator(self.navigationController, transacstion: transaction)
+        coordinator.start()
+    }
 }

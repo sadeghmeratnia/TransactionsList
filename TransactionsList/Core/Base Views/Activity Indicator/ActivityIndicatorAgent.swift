@@ -11,7 +11,7 @@ import UIKit
 struct ActivityIndicatorAgent {
     func applyToAView(superView: UIView) {
         let spinner = UIActivityIndicatorView(style: .medium)
-        spinner.color = ColorRefrences.titleTextColor.color
+        spinner.color = ColorRefrences.title.color
         superView.addSubview(spinner)
         self.setupSpinnerConstrains(spinner: spinner, superView: superView)
         spinner.startAnimating()

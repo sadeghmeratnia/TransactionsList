@@ -55,13 +55,13 @@ extension CardModel {
 // MARK: - Transaction More Info Model
 
 struct TransactionMoreInfoModel: Codable {
-    let numberOfTransaction: Int?
+    let numberOfTransfers: Int?
     let totalTransfer: Int?
 }
 
 extension TransactionMoreInfoModel {
     enum CodingKeys: String, CodingKey {
-        case numberOfTransaction = "number_of_transfers"
+        case numberOfTransfers = "number_of_transfers"
         case totalTransfer = "total_transfer"
     }
 }

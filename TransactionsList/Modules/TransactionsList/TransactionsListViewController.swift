@@ -28,7 +28,8 @@ class TransactionsListViewController: BaseViewController {
 
     private func setupTableView() {
         self.tableView.register(
-            UINib(nibName: self.tableCellID, bundle: nil), forCellReuseIdentifier: self.tableCellID)
+            UINib(nibName: self.tableCellID, bundle: nil),
+            forCellReuseIdentifier: self.tableCellID)
 
         let footerView = UIView(frame: CGRect(x: 0, y: 0, width: self.tableView.frame.width, height: 20))
 
@@ -42,17 +43,17 @@ class TransactionsListViewController: BaseViewController {
 
     private func setupTextField() {
         self.searchField.backgroundColor = ColorRefrences.inputBackground.color
-        self.searchField.textColor = ColorRefrences.titleTextColor.color
+        self.searchField.textColor = ColorRefrences.title.color
 
         self.searchField.cornerRadius = 8
 
         let placeholder = "search.placeholder".localized
         let attributedPlaceholder = NSAttributedString(
             string: placeholder,
-            attributes: [.foregroundColor: ColorRefrences.titleTextColor.color])
+            attributes: [.foregroundColor: ColorRefrences.title.color])
 
         self.searchField.attributedPlaceholder = attributedPlaceholder
-        self.searchField.tintColor = ColorRefrences.titleTextColor.color
+        self.searchField.tintColor = ColorRefrences.title.color
     }
 
     private func setupBindings() {
@@ -87,6 +88,17 @@ class TransactionsListViewController: BaseViewController {
                 else { return }
 
                 self.tableView.refreshControl?.endRefreshing()
+            })
+            .disposed(by: self.bag)
+
+        self.tableView.rx.itemSelected.subscribe(on: MainScheduler.instance)
+            .subscribe(onNext: { [weak self] indexPath in
+                guard
+                    let self = self,
+                    let coordinator = self.coordinator as? TransactionsListCoordinator
+                else { return }
+
+                coordinator.navigateToDetail(with: self.viewModel.transactions.value[indexPath.row])
             })
             .disposed(by: self.bag)
 
