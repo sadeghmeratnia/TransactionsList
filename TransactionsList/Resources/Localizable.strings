@@ -1,0 +1,10 @@
+/* 
+  Localizable.strings
+  TransactionsList
+
+  Created by Sadegh on 5/18/23.
+  
+*/
+
+// MARK: - Home
+"search.placeholder" = "Search transactions by name...";

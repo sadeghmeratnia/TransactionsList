@@ -14,7 +14,7 @@ public protocol APIRouter {
     static var path: String { get }
     static var requestType: RequestType { get }
     var requestBody: Encodable? { get }
-    var queryParams: [String]? { get }
+    var queryParams: [String: String]? { get }
 
     associatedtype ResponseType: Codable
 }
@@ -35,7 +35,7 @@ public extension APIRouter {
         }
     }
 
-    var queryParams: [String]? {
+    var queryParams: [String: String]? {
         nil
     }
 

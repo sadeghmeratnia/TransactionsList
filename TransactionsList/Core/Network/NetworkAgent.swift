@@ -8,7 +8,7 @@
 import RxSwift
 import UIKit
 
-class EWNetworkAgent {
+class NetworkAgent {
     private let baseURL: URL?
     private var decoder: JSONDecoder!
     private var encoder: JSONEncoder!
@@ -78,12 +78,14 @@ class EWNetworkAgent {
                 }
             case .urlQuery:
                 if let parameters = router.queryParams {
-                    parameters.forEach { value in
-                        guard var URLString = request.url?.absoluteString else { return }
-                        URLString.append("/\(value)")
-                        request.url = URL(string: URLString)
+                    var components = URLComponents(url: url, resolvingAgainstBaseURL: true)
+
+                    components?.queryItems = parameters.compactMapValues { $0 }.map { key, value in
+                        URLQueryItem(name: key, value: value)
                     }
+                    request = URLRequest(url: components?.url ?? url)
                 }
+
             case .httpHeader:
                 request.httpBody = nil
             default:

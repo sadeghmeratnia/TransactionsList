@@ -61,7 +61,7 @@ extension AppDelegate {
     private func registerDependencies() {
         Resolver
             .register {
-                EWNetworkAgent(baseUrl: URL(string: "https://c78447d4-7970-4131-bdfd-eadf765de1eb.mock.pstmn.io"))
+                NetworkAgent(baseUrl: URL(string: "https://c78447d4-7970-4131-bdfd-eadf765de1eb.mock.pstmn.io"))
             }
     }
 }
