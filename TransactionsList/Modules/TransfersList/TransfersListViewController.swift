@@ -1,5 +1,5 @@
 //
-//  TransactionsListViewController.swift
+//  TransfersListViewController.swift
 //  TransactionsList
 //
 //  Created by Sadegh on 5/17/23.
@@ -10,12 +10,12 @@ import RxDataSources
 import RxSwift
 import UIKit
 
-class TransactionsListViewController: BaseViewController {
+class TransfersListViewController: BaseViewController {
     @IBOutlet private var tableView: UITableView!
     @IBOutlet private var searchField: UITextField!
     @IBOutlet var cancelSearchButton: UIButton!
 
-    private var viewModel = TransactionsListViewModel()
+    private var viewModel = TransfersListViewModel()
     private var bag = DisposeBag()
     private let allTransfersCell: String = "TransfersTableViewCell"
     private let favoriteTransfersCell: String = "FavoriteTransfersTableViewCell"
@@ -172,7 +172,7 @@ class TransactionsListViewController: BaseViewController {
     }
 
     private func navigateToDetailView(transfer: TransferModel) {
-        guard let coordinator = self.coordinator as? TransactionsListCoordinator else { return }
+        guard let coordinator = self.coordinator as? TransfersListCoordinator else { return }
         self.searchField.text = ""
         coordinator.navigateToDetail(with: transfer)
     }
@@ -198,7 +198,7 @@ class TransactionsListViewController: BaseViewController {
 
 // MARK: - UITableViewDelegate
 
-extension TransactionsListViewController: UITableViewDelegate {
+extension TransfersListViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         if self.viewModel.sections.value[indexPath.section].sectionType == .favorite {
             return 140

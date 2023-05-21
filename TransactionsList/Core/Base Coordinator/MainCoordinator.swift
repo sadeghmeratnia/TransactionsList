@@ -26,7 +26,7 @@ extension MainCoordinator: Coordinator {
     }
 
     func coordinateToFirstPage() {
-        let coordinator = TransactionsListCoordinator(navigationController: navigationController)
+        let coordinator = TransfersListCoordinator(navigationController: navigationController)
         coordinator.start()
     }
 }

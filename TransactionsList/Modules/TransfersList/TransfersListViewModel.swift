@@ -1,5 +1,5 @@
 //
-//  TransactionsListViewModel.swift
+//  TransfersListViewModel.swift
 //  TransactionsList
 //
 //  Created by Sadegh on 5/18/23.
@@ -10,7 +10,7 @@ import Resolver
 import RxCocoa
 import RxSwift
 
-class TransactionsListViewModel {
+class TransfersListViewModel {
     var transfers = BehaviorRelay<[TransferModel]>(value: [])
     var sections = BehaviorRelay<[TransferSectionModel]>(value: [])
     var isLoading = BehaviorRelay<Bool>(value: false)
@@ -45,7 +45,7 @@ class TransactionsListViewModel {
     private func getTransactions(isReplacable: Bool = false) {
         self.isLoading.accept(true)
 
-        let router = TransactionsListRouter(queryParams: ["page": "\(self.page)"])
+        let router = TransfersListRouter(queryParams: ["page": "\(self.page)"])
 
         self.netAgent.request(router).subscribe(on: MainScheduler.instance)
             .subscribe(onNext: { model in

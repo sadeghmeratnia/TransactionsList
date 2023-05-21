@@ -50,11 +50,11 @@
 		72CF3A752A14B56700C92346 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72CF3A742A14B56700C92346 /* Coordinator.swift */; };
 		72CF3A772A14B5E700C92346 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72CF3A762A14B5E700C92346 /* MainCoordinator.swift */; };
 		72CF3A7A2A14E55C00C92346 /* MainNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72CF3A792A14E55C00C92346 /* MainNavigationController.swift */; };
-		72CF3A7E2A14E9C200C92346 /* TransactionsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72CF3A7D2A14E9C100C92346 /* TransactionsListViewController.swift */; };
+		72CF3A7E2A14E9C200C92346 /* TransfersListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72CF3A7D2A14E9C100C92346 /* TransfersListViewController.swift */; };
 		72CF3A812A14EA2700C92346 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72CF3A802A14EA2700C92346 /* BaseViewController.swift */; };
 		72CF3A842A14EB8C00C92346 /* ViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72CF3A832A14EB8C00C92346 /* ViewControllerExtension.swift */; };
-		72CF3A862A1517E200C92346 /* TransactionsListViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72CF3A852A1517E200C92346 /* TransactionsListViewController.storyboard */; };
-		72CF3A882A15183000C92346 /* TransactionsListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72CF3A872A15183000C92346 /* TransactionsListCoordinator.swift */; };
+		72CF3A862A1517E200C92346 /* TransfersListViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72CF3A852A1517E200C92346 /* TransfersListViewController.storyboard */; };
+		72CF3A882A15183000C92346 /* TransfersListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72CF3A872A15183000C92346 /* TransfersListCoordinator.swift */; };
 		72CF3A8B2A151CE200C92346 /* ColorRefrences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72CF3A8A2A151CE200C92346 /* ColorRefrences.swift */; };
 		72EA865C2A1578A000DCF9C8 /* APIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72EA865B2A1578A000DCF9C8 /* APIRouter.swift */; };
 		72EA865E2A1668FF00DCF9C8 /* EncodableExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72EA865D2A1668FF00DCF9C8 /* EncodableExtension.swift */; };
@@ -65,9 +65,9 @@
 		72EA866A2A16711500DCF9C8 /* Resolver in Frameworks */ = {isa = PBXBuildFile; productRef = 72EA86692A16711500DCF9C8 /* Resolver */; };
 		72EA866E2A1674F700DCF9C8 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72EA866D2A1674F700DCF9C8 /* StringExtension.swift */; };
 		72EA86702A16750D00DCF9C8 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 72EA866F2A16750D00DCF9C8 /* Localizable.strings */; };
-		72EA86722A16753900DCF9C8 /* TransactionsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72EA86712A16753900DCF9C8 /* TransactionsListViewModel.swift */; };
+		72EA86722A16753900DCF9C8 /* TransfersListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72EA86712A16753900DCF9C8 /* TransfersListViewModel.swift */; };
 		72EA86742A16775F00DCF9C8 /* TransferModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72EA86732A16775F00DCF9C8 /* TransferModel.swift */; };
-		72EA86762A167CD300DCF9C8 /* TransactionsListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72EA86752A167CD300DCF9C8 /* TransactionsListRouter.swift */; };
+		72EA86762A167CD300DCF9C8 /* TransfersListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72EA86752A167CD300DCF9C8 /* TransfersListRouter.swift */; };
 		72EA86782A16857E00DCF9C8 /* TransfersTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72EA86772A16857E00DCF9C8 /* TransfersTableViewCell.xib */; };
 		72EA867A2A16859D00DCF9C8 /* TransfersTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72EA86792A16859D00DCF9C8 /* TransfersTableViewCell.swift */; };
 		72EA867F2A168C7000DCF9C8 /* BaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72EA867E2A168C7000DCF9C8 /* BaseTableViewCell.swift */; };
@@ -136,11 +136,11 @@
 		72CF3A742A14B56700C92346 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		72CF3A762A14B5E700C92346 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
 		72CF3A792A14E55C00C92346 /* MainNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavigationController.swift; sourceTree = "<group>"; };
-		72CF3A7D2A14E9C100C92346 /* TransactionsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsListViewController.swift; sourceTree = "<group>"; };
+		72CF3A7D2A14E9C100C92346 /* TransfersListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransfersListViewController.swift; sourceTree = "<group>"; };
 		72CF3A802A14EA2700C92346 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		72CF3A832A14EB8C00C92346 /* ViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerExtension.swift; sourceTree = "<group>"; };
-		72CF3A852A1517E200C92346 /* TransactionsListViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TransactionsListViewController.storyboard; sourceTree = "<group>"; };
-		72CF3A872A15183000C92346 /* TransactionsListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsListCoordinator.swift; sourceTree = "<group>"; };
+		72CF3A852A1517E200C92346 /* TransfersListViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TransfersListViewController.storyboard; sourceTree = "<group>"; };
+		72CF3A872A15183000C92346 /* TransfersListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransfersListCoordinator.swift; sourceTree = "<group>"; };
 		72CF3A8A2A151CE200C92346 /* ColorRefrences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorRefrences.swift; sourceTree = "<group>"; };
 		72EA865B2A1578A000DCF9C8 /* APIRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRouter.swift; sourceTree = "<group>"; };
 		72EA865D2A1668FF00DCF9C8 /* EncodableExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncodableExtension.swift; sourceTree = "<group>"; };
@@ -148,9 +148,9 @@
 		72EA86662A166DF700DCF9C8 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		72EA866D2A1674F700DCF9C8 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		72EA866F2A16750D00DCF9C8 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
-		72EA86712A16753900DCF9C8 /* TransactionsListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsListViewModel.swift; sourceTree = "<group>"; };
+		72EA86712A16753900DCF9C8 /* TransfersListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransfersListViewModel.swift; sourceTree = "<group>"; };
 		72EA86732A16775F00DCF9C8 /* TransferModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferModel.swift; sourceTree = "<group>"; };
-		72EA86752A167CD300DCF9C8 /* TransactionsListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsListRouter.swift; sourceTree = "<group>"; };
+		72EA86752A167CD300DCF9C8 /* TransfersListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransfersListRouter.swift; sourceTree = "<group>"; };
 		72EA86772A16857E00DCF9C8 /* TransfersTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransfersTableViewCell.xib; sourceTree = "<group>"; };
 		72EA86792A16859D00DCF9C8 /* TransfersTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransfersTableViewCell.swift; sourceTree = "<group>"; };
 		72EA867E2A168C7000DCF9C8 /* BaseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewCell.swift; sourceTree = "<group>"; };
@@ -387,12 +387,12 @@
 			isa = PBXGroup;
 			children = (
 				72EA867B2A1685A400DCF9C8 /* Transfers Table View Cells */,
-				72CF3A852A1517E200C92346 /* TransactionsListViewController.storyboard */,
-				72CF3A7D2A14E9C100C92346 /* TransactionsListViewController.swift */,
-				72EA86712A16753900DCF9C8 /* TransactionsListViewModel.swift */,
-				72CF3A872A15183000C92346 /* TransactionsListCoordinator.swift */,
+				72CF3A852A1517E200C92346 /* TransfersListViewController.storyboard */,
+				72CF3A7D2A14E9C100C92346 /* TransfersListViewController.swift */,
+				72EA86712A16753900DCF9C8 /* TransfersListViewModel.swift */,
+				72CF3A872A15183000C92346 /* TransfersListCoordinator.swift */,
 				72EA86732A16775F00DCF9C8 /* TransferModel.swift */,
-				72EA86752A167CD300DCF9C8 /* TransactionsListRouter.swift */,
+				72EA86752A167CD300DCF9C8 /* TransfersListRouter.swift */,
 			);
 			path = TransfersList;
 			sourceTree = "<group>";
@@ -595,7 +595,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				72EA86782A16857E00DCF9C8 /* TransfersTableViewCell.xib in Resources */,
-				72CF3A862A1517E200C92346 /* TransactionsListViewController.storyboard in Resources */,
+				72CF3A862A1517E200C92346 /* TransfersListViewController.storyboard in Resources */,
 				72EA86702A16750D00DCF9C8 /* Localizable.strings in Resources */,
 				72A95AA22A18F3C800A505FF /* DetaileInfoTableViewCell.xib in Resources */,
 				72CF3A4D2A14B36000C92346 /* LaunchScreen.storyboard in Resources */,
@@ -670,9 +670,9 @@
 				72A95AC52A19294200A505FF /* Card+CoreDataClass.swift in Sources */,
 				72A95A852A177A8200A505FF /* ActivityIndicatorAgent.swift in Sources */,
 				72EA86742A16775F00DCF9C8 /* TransferModel.swift in Sources */,
-				72CF3A7E2A14E9C200C92346 /* TransactionsListViewController.swift in Sources */,
+				72CF3A7E2A14E9C200C92346 /* TransfersListViewController.swift in Sources */,
 				72A95A932A18B32000A505FF /* DetailCoordinator.swift in Sources */,
-				72EA86762A167CD300DCF9C8 /* TransactionsListRouter.swift in Sources */,
+				72EA86762A167CD300DCF9C8 /* TransfersListRouter.swift in Sources */,
 				72EA865C2A1578A000DCF9C8 /* APIRouter.swift in Sources */,
 				72EA867F2A168C7000DCF9C8 /* BaseTableViewCell.swift in Sources */,
 				72CF3A3E2A14B35E00C92346 /* AppDelegate.swift in Sources */,
@@ -691,7 +691,7 @@
 				72CF3A732A14B53F00C92346 /* Coordinatable.swift in Sources */,
 				72A95AC92A192C2B00A505FF /* CoreDataManager.swift in Sources */,
 				72CF3A842A14EB8C00C92346 /* ViewControllerExtension.swift in Sources */,
-				72EA86722A16753900DCF9C8 /* TransactionsListViewModel.swift in Sources */,
+				72EA86722A16753900DCF9C8 /* TransfersListViewModel.swift in Sources */,
 				72A95AC42A19294200A505FF /* MoreInfo+CoreDataProperties.swift in Sources */,
 				72A95AC02A19294100A505FF /* Person+CoreDataClass.swift in Sources */,
 				72EA86672A166DF700DCF9C8 /* NetworkError.swift in Sources */,
@@ -702,7 +702,7 @@
 				72EA86862A16918600DCF9C8 /* UIViewExtension.swift in Sources */,
 				72A95A952A18B4D700A505FF /* DetailViewModel.swift in Sources */,
 				72A95A8A2A1781D800A505FF /* BoolExtension.swift in Sources */,
-				72CF3A882A15183000C92346 /* TransactionsListCoordinator.swift in Sources */,
+				72CF3A882A15183000C92346 /* TransfersListCoordinator.swift in Sources */,
 				72A95ADB2A196E0100A505FF /* BaseCollectionViewCell.swift in Sources */,
 				72A95A9D2A18F29D00A505FF /* UILabelExtension.swift in Sources */,
 				72A95ACC2A193DD000A505FF /* FavoriteTransfersTableViewCell.swift in Sources */,
