@@ -20,7 +20,7 @@ class TransactionsListCoordinator: Coordinator {
         self.navigationController.setViewControllers([viewController], animated: true)
     }
 
-    func navigateToDetail(with transaction: TransactionModel) {
+    func navigateToDetail(with transaction: TransferModel) {
         let coordinator = DetailCoordinator(self.navigationController, transacstion: transaction)
         coordinator.start()
     }

@@ -11,5 +11,5 @@ struct TransactionsListRouter: APIRouter {
     static var path: String = "transfer-list"
     static var method: HTTPMethod = .get
     var queryParams: [String: String]?
-    typealias ResponseType = [TransactionModel]
+    typealias ResponseType = [TransferModel]
 }

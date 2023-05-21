@@ -11,10 +11,10 @@ import RxSwift
 
 class DetailViewModel {
     var list = BehaviorRelay<[DetailDataModel]>(value: [])
-    private(set) var transaction: TransactionModel
+    private(set) var transfer: TransferModel
 
-    init(transaction: TransactionModel) {
-        self.transaction = transaction
+    init(transaction: TransferModel) {
+        self.transfer = transaction
     }
 
     func setupDataModel() {
@@ -22,37 +22,37 @@ class DetailViewModel {
         model.append(
             DetailDataModel(
                 key: "detail.email",
-                value: self.transaction.person?.email
+                value: self.transfer.person?.email
             )
         )
         model.append(
             DetailDataModel(
                 key: "detail.cardType",
-                value: self.transaction.card?.cardType
+                value: self.transfer.card?.cardType
             )
         )
         model.append(
             DetailDataModel(
                 key: "detail.transfer",
-                value: self.transaction.lastTransfer?.toStandardDateFormat
+                value: self.transfer.lastTransfer?.toStandardDateFormat
             )
         )
         model.append(
             DetailDataModel(
                 key: "detail.count",
-                value: self.transaction.moreInfo?.numberOfTransfers?.toString
+                value: self.transfer.moreInfo?.numberOfTransfers?.toString
             )
         )
         model.append(
             DetailDataModel(
                 key: "detail.total",
-                value: self.transaction.moreInfo?.totalTransfer?.in3digitFormat
+                value: self.transfer.moreInfo?.totalTransfer?.in3digitFormat
             )
         )
         model.append(
             DetailDataModel(
                 key: "detail.note",
-                value: self.transaction.note
+                value: self.transfer.note
             )
         )
 

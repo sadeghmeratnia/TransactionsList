@@ -33,7 +33,7 @@ class DetailViewController: BaseViewController {
     }
 
     private func setupData() {
-        let model = self.viewModel.transaction
+        let model = self.viewModel.transfer
 
         self.imageView.setImage(urlString: model.person?.avatar)
         self.nameLabel.text = model.person?.fullName
@@ -48,10 +48,15 @@ class DetailViewController: BaseViewController {
         self.identifierLabel.textColor = ColorRefrences.desc.color
 
         self.favoriteButton.setTitleColor(ColorRefrences.buttonTitle.color, for: .normal)
-        self.favoriteButton.setTitle("detail.add.favorite".localized, for: .normal)
         self.favoriteButton.titleLabel?.font = .systemFont(ofSize: 16, weight: .semibold)
         self.favoriteButton.backgroundColor = ColorRefrences.primaryButton.color
         self.favoriteButton.cornerRadius = 8
+
+        if CoreDataManager.shared.findTransfer(self.viewModel.transfer) == nil {
+            self.favoriteButton.setTitle("detail.add.favorite".localized, for: .normal)
+        } else {
+            self.favoriteButton.setTitle("detail.remove.favorite".localized, for: .normal)
+        }
     }
 
     private func setupTableView() {
@@ -78,6 +83,19 @@ class DetailViewController: BaseViewController {
                 cell.removeSeparator()
             }
         }
+        .disposed(by: self.bag)
+
+        self.favoriteButton.rx.tap.subscribe(on: MainScheduler.instance).subscribe(onNext: {
+            if let favoritedTransfer = CoreDataManager.shared.findTransfer(self.viewModel.transfer) {
+                CoreDataManager.shared.deteletTransfer(favoritedTransfer, completionHandler: {
+                    self.favoriteButton.setTitle("detail.add.favorite".localized, for: .normal)
+                })
+            } else {
+                CoreDataManager.shared.saveTransfer(self.viewModel.transfer, completionHandler: {
+                    self.favoriteButton.setTitle("detail.remove.favorite".localized, for: .normal)
+                })
+            }
+        })
         .disposed(by: self.bag)
     }
 

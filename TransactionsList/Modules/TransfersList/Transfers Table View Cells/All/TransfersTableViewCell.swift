@@ -1,5 +1,5 @@
 //
-//  TransactionTableViewCell.swift
+//  TransfersTableViewCell.swift
 //  TransactionsList
 //
 //  Created by Sadegh on 5/18/23.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class TransactionTableViewCell: BaseTableViewCell {
+class TransfersTableViewCell: BaseTableViewCell {
     @IBOutlet private var avatarImageView: UIImageView!
     @IBOutlet private var nameLabel: UILabel!
     @IBOutlet private var identifierLabel: UILabel!
@@ -19,11 +19,14 @@ class TransactionTableViewCell: BaseTableViewCell {
     }
 
     override func setupModel(model: Codable) {
-        guard let model = model as? TransactionModel else { return }
+        guard let model = model as? TransferModel else { return }
+
+        let favoritedTransfer = CoreDataManager.shared.findTransfer(model)
 
         self.nameLabel.text = model.person?.fullName
         self.identifierLabel.text = model.card?.cardNumber?.inCardNumberFormat
         self.avatarImageView.setImage(urlString: model.person?.avatar)
+        self.starImageView.isHidden = favoritedTransfer == nil
     }
 
     override func setupView() {
@@ -40,5 +43,6 @@ class TransactionTableViewCell: BaseTableViewCell {
 
         self.arrowImageView.image = UIImage(systemName: "chevron.right")
         self.arrowImageView.changeImageColor(color: .systemGray2)
+        self.starImageView.image = UIImage(named: "ic_star")
     }
 }

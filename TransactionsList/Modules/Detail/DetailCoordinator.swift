@@ -9,9 +9,9 @@ import UIKit
 
 class DetailCoordinator: Coordinator {
     var navigationController: UINavigationController
-    private let transaction: TransactionModel
+    private let transaction: TransferModel
 
-    init(_ navigationController: UINavigationController, transacstion: TransactionModel) {
+    init(_ navigationController: UINavigationController, transacstion: TransferModel) {
         self.navigationController = navigationController
         self.transaction = transacstion
     }

@@ -8,6 +8,9 @@
 
 // MARK: - Home
 "search.placeholder" = "Search transactions by name...";
+"favorite" = "Favorites";
+"all" = "All";
+"home.cancel" = "Cancel";
 
 //MARK: - Detail
 "detail.email" = "email:";

@@ -21,28 +21,40 @@
                                 <rect key="frame" x="0.0" y="123" width="393" height="729"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="g0N-Ps-hO9">
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="vgZ-gg-bCv">
                                 <rect key="frame" x="16" y="59" width="361" height="40"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="f8B-ih-bVG"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="g0N-Ps-hO9">
+                                        <rect key="frame" x="0.0" y="0.0" width="278" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="f8B-ih-bVG"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M6N-BH-k1T">
+                                        <rect key="frame" x="286" y="0.0" width="75" height="40"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="1pX-Dq-GET" firstAttribute="top" secondItem="vgZ-gg-bCv" secondAttribute="bottom" constant="24" id="6Ke-K9-Q0T"/>
+                            <constraint firstItem="vgZ-gg-bCv" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="6iK-wd-350"/>
+                            <constraint firstItem="vgZ-gg-bCv" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="Eyv-Ug-paO"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="1pX-Dq-GET" secondAttribute="trailing" id="FoY-3D-LFG"/>
-                            <constraint firstItem="g0N-Ps-hO9" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="Gzs-ZL-q4b"/>
-                            <constraint firstItem="1pX-Dq-GET" firstAttribute="top" secondItem="g0N-Ps-hO9" secondAttribute="bottom" constant="24" id="Kwb-G5-tzG"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="g0N-Ps-hO9" secondAttribute="trailing" constant="16" id="O5u-hi-Uk9"/>
-                            <constraint firstItem="g0N-Ps-hO9" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="TJ2-31-9HX"/>
                             <constraint firstAttribute="bottom" secondItem="1pX-Dq-GET" secondAttribute="bottom" id="dF7-YF-qhq"/>
                             <constraint firstItem="1pX-Dq-GET" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="uF2-cg-YQE"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="vgZ-gg-bCv" secondAttribute="trailing" constant="16" id="wha-TT-lv2"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="cancelSearchButton" destination="M6N-BH-k1T" id="mKh-Wf-Xcu"/>
                         <outlet property="searchField" destination="g0N-Ps-hO9" id="ZiA-GK-UsY"/>
                         <outlet property="tableView" destination="1pX-Dq-GET" id="Jof-tj-srN"/>
                     </connections>
